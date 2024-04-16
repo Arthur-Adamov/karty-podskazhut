@@ -7,6 +7,9 @@
 .page {
   min-inline-size: 360px;
   margin: 0;
+  background-color: var(--bg-color, #F3EFEC);
+  color: var(--text-color, #312A4E);
+  font-family: var(--main-font, sans-serif);
 }
 
 p,
@@ -19,4 +22,54 @@ ol,
 li,
 figure {
   margin: 0;
+}
+
+:root {
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --main-font: Raleway, Arial, sans-serif;
+  --accent-font: 'STIX Two Text', serif;
+}
+
+.header {
+  padding-block-start: 10vi;
+}
+
+.header__title {
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+  padding-block-end: 40px;
+}
+
+.heading {
+  text-align: center;
+  font-family: var(--accent-font, serif);
+  font-weight: 600;
+  line-height: 0.9;
+}
+
+.content-section {
+  padding-inline: 5vi;
+}
+
+.content__title {
+  font-size: 30px;
+  padding-block-start: 7vi;
+  padding-block-end: 2.5vi;
+}
+
+.content__text-block {
+  font-size: 18px;
+}
+
+.content__paragraph {
+
+}
+
+.content__text-block .content__paragraph:not(:last-child) {
+  padding-block-end: 1.5em;
+}
+
+a {
+  color: currentColor;
 }
