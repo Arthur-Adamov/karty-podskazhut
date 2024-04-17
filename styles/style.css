@@ -62,12 +62,33 @@ figure {
   font-size: 18px;
 }
 
+.content__text-block_type_first-lettered {
+
+}
+
+.content__text-block_type_first-lettered .content__paragraph:first-of-type:first-letter {
+  display: inline-block;
+  margin-inline-end: 1px;
+  padding: 0 4px;
+  font-weight: 700;
+  font-size: 30px;
+  background-color: var(--accent-color);
+}
+
 .content__paragraph {
 
 }
 
 .content__text-block .content__paragraph:not(:last-child) {
   padding-block-end: 1.5em;
+}
+
+.content__figure {
+
+}
+
+.content__picture-caption {
+  
 }
 
 .content__blockquote {
